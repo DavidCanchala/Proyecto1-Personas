@@ -15,8 +15,8 @@ class ComunaController extends Controller
      */
     public function index()
     {
-        $comunas = comuna::all();
-        return view('comuna.index',["comunas" => $comunas]);
+        $comuna = comuna::all();
+        return view('comuna.index',["comunas" => $comuna]);
     }
 
     /**
